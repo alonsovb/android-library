@@ -64,6 +64,11 @@ public class ExampleListActivity extends Activity
             // fragment transaction.
             Bundle arguments = new Bundle();
             arguments.putString(ExampleDetailFragment.ARG_ITEM_ID, id);
+
+            if (id.equals("4")) {
+                System.out.println("SELECTED NUMBER FOUR!!!!!!!!!!!!");
+            }
+
             ExampleDetailFragment fragment = new ExampleDetailFragment();
             fragment.setArguments(arguments);
             getFragmentManager().beginTransaction()
